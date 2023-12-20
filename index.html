@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/porticon.png"
+      type="image/x-icon"
+    />
+    <title>Sk Ikbal | Front-End Developer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- mobile nav  -->
+    <section class="hidden" id="mobile_nav">
+      <div
+        class="w-full h-screen bg-white fixed z-20 flex justify-center items-center"
+      >
+        <i
+          class="ri-close-line absolute top-10 right-10 text-4xl cursor-pointer"
+          onclick="navTrigger()"
+        ></i>
+        <ul class="flex flex-col gap-8 text-2xl">
+          <li><a href="#" onclick="navTrigger()">Home</a></li>
+          <li><a href="#about" onclick="navTrigger()">About</a></li>
+          <li><a href="#projects" onclick="navTrigger()">Projects</a></li>
+          <li><a href="#contact" onclick="navTrigger()">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <nav
+      class="flex justify-between px-14 py-6 items-center fixed w-full bg-white shadow_active max-md:px-6 z-10"
+    >
+      <h2 class="text-2xl">itsmeebu</h2>
+      <ul class="flex gap-6 max-md:hidden">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <i class="ri-menu-line text-3xl lg:hidden" onclick="navTrigger()"></i>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="w-full min-h-screen flex justify-center items-center bg-[#f9f9f9] py-24 relative max-md:flex-col"
+    >
+      <div
+        class="h-full w-[80%] flex justify-between items-center max-md:flex-col-reverse max-md:w-full max-md:gap-10 py-10 px-4"
+      >
+        <div class="px-8 w-[60%] max-md:w-full max-md:text-center max-md:px-1">
+          <h1 class="text-6xl leading-tight relative max-md:text-4xl">
+            Front-End React Developer 👋
+          </h1>
+          <p class="my-4 text-lg w-[82%] max-md:w-full max-md:px-4">
+            Hi, I'm Sk Ikbal. A passionate Front-end React Developer based in
+            West Bengal, India
+          </p>
+          <div class="flex gap-4 my-5 items-center max-md:justify-center">
+            <a href="https://www.linkedin.com/in/itsmeebu/" target="_blank"
+              ><img src="./assets/svgexport-3.svg" alt="itsmeebu"
+            /></a>
+            <a href="https://github.com/itsme-ebu" target="_blank">
+              <img src="./assets/svgexport-4.svg" alt="itsmeebu"
+            /></a>
+          </div>
+        </div>
+        <div class="w-[40%] max-md:w-full h-96 max-md:h-80 itsmee"></div>
+      </div>
+      <div
+        class="flex gap-12 items-center max-md:flex-col lg:absolute lg:-bottom-16 lg:left-32 px-6"
+      >
+        <h2
+          class="lg:border-r max-md:border-b max-md:py-3 text-3xl border-black px-8"
+        >
+          Tech Stack
+        </h2>
+        <ul class="flex gap-8 flex-wrap items-center justify-center">
+          <li class="cursor-pointer">
+            <img
+              src="https://skillicons.dev/icons?i=html,css"
+              alt="itsmeebu"
+              class="skill_icon"
+            />
+          </li>
+          <li class="cursor-pointer">
+            <img
+              src="https://skillicons.dev/icons?i=js,git"
+              alt="itsmeebu"
+              class="skill_icon"
+            />
+          </li>
+          <li class="cursor-pointer">
+            <img
+              src="https://skillicons.dev/icons?i=react,redux"
+              alt="itsmeebu"
+              class="skill_icon"
+            />
+          </li>
+          <li class="cursor-pointer">
+            <img
+              src="https://skillicons.dev/icons?i=tailwind,bootstrap"
+              alt="itsmeebu"
+              class="skill_icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- About  -->
+
+    <section
+      class="w-full min-h-screen py-10 max-md:px-5 flex items-center"
+      id="about"
+    >
+      <div
+        class="w-[80%] mx-auto flex justify-between max-md:flex-col max-md:w-full max-md:gap-10"
+      >
+        <div class="w-[40%] max-md:w-full">
+          <img
+            src="https://images.pexels.com/photos/5496461/pexels-photo-5496461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+            class="max-w-full aspect-[1/0.9] rounded-3xl object-cover"
+          />
+        </div>
+        <div class="w-[55%] max-md:w-full max-md:text-center">
+          <h2 class="heading text-blue-600 text-xl">ABOUT ME</h2>
+          <h2 class="text-3xl my-3">
+            A dedicated Front-end Developer based in West Bengal, India 📍
+          </h2>
+          <p class="text-[#646464] text-lg">
+            I'm a Junior Front-End Developer with strong skills in HTML, CSS,
+            JavaScript, React and Tailwind. I'm really good at creating and
+            taking care of websites that work well on all devices. I specialize
+            in making interactive and interesting designs by writing neat and
+            efficient code. I use the latest tools and methods for development.
+            I enjoy working with teams to create awesome web applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTES -->
+    <section
+      class="w-full min-h-screen bg-[#f9f9f9] px-32 py-20 max-md:px-6"
+      id="projects"
+    >
+      <h2 class="heading text-blue-600">PORTFOLIO</h2>
+      <h2 class="text-2xl my-4">
+        Each project is a unique piece of development 🧩
+      </h2>
+      <div
+        class="bg-white h-full shadow_active rounded-2xl flex gap-10 p-4 my-10 max-md:flex-col max-md:py-10"
+      >
+        <div
+          class="w-[60%] h-96 car rounded-2xl shadow_active max-md:w-full"
+        ></div>
+        <div class="w-[40%] text-center px-4 max-md:w-full">
+          <h2 class="uppercase heading text-xl my-5">
+            CAR RENTAL (january 2024) 🚗
+          </h2>
+          <p class="text-[#545454] text-lg font-medium">
+            A car rental website is an online platform that allows users to rent
+            cars for personal or business use. The website provides an interface
+            for searching, comparing, and reserving cars.
+          </p>
+          <img
+            src="https://skillicons.dev/icons?i=react,tailwind"
+            alt="itsmeebu"
+            class="mx-auto my-6"
+          />
+          <div class="flex gap-5 justify-center">
+            <p class="text-xl">
+              <a href="https://github.com/itsme-ebu/car-rent" target="_blank"
+                >Code <i class="ri-github-line text-2xl"></i
+              ></a>
+            </p>
+            <p class="text-xl">
+              <a href="https://car-rent-five-chi.vercel.app/" target="_blank"
+                >Live Demo <i class="ri-external-link-line text-2xl"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white h-full shadow_active rounded-2xl flex gap-10 p-4 my-10 max-md:flex-col-reverse max-md:py-10"
+      >
+        <div class="w-[40%] text-center px-4 lg:py-10 max-md:w-full">
+          <h2 class="uppercase heading text-xl my-5">
+            COINDOM (NOVEMBER 2023) 🪙
+          </h2>
+          <p class="text-[#545454] text-lg font-medium">
+            Coindom is a crypto app that allows users to search for information
+            about various cryptocurrencies in real-time.
+          </p>
+          <img
+            src="https://skillicons.dev/icons?i=html,css,js"
+            alt="itsmeebu"
+            class="mx-auto my-6"
+          />
+          <div class="flex gap-5 justify-center">
+            <p class="text-xl">
+              <a href="https://github.com/itsme-ebu/coinvue" target="_blank"
+                >Code <i class="ri-github-line text-2xl"></i
+              ></a>
+            </p>
+            <p class="text-xl">
+              <a href="https://itsme-ebu.github.io/coinvue/" target="_blank"
+                >Live Demo <i class="ri-external-link-line text-2xl"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-[60%] h-96 coindom rounded-2xl shadow_active max-md:w-full"
+        ></div>
+      </div>
+      <div
+        class="bg-white h-full shadow_active rounded-2xl flex gap-10 p-4 my-10 max-md:flex-col max-md:py-10"
+      >
+        <div
+          class="w-[60%] h-96 gym rounded-2xl shadow_active max-md:w-full"
+        ></div>
+        <div class="w-[40%] text-center px-4 max-md:w-full">
+          <h2 class="uppercase heading text-xl my-5">
+            GYMATE (DECEMBER 2023) 🏋️
+          </h2>
+          <p class="text-[#545454] text-lg font-medium">
+            A gym website is a comprehensive resource for fitness information,
+            class schedules, membership options, and tools to help users achieve
+            their fitness goals.
+          </p>
+          <img
+            src="https://skillicons.dev/icons?i=react,tailwind"
+            alt="itsmeebu"
+            class="mx-auto my-6"
+          />
+          <div class="flex gap-5 justify-center">
+            <p class="text-xl">
+              <a href="https://github.com/itsme-ebu/gymate" target="_blank"
+                >Code <i class="ri-github-line text-2xl"></i
+              ></a>
+            </p>
+            <p class="text-xl">
+              <a href="https://gymate-murex.vercel.app/" target="_blank"
+                >Live Demo <i class="ri-external-link-line text-2xl"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="bg-white px-32 py-20 max-md:px-6" id="contact">
+      <h2 class="heading text-blue-600">CONTACT</h2>
+      <h2 class="text-3xl my-5">Don't be shy! Hit me up! 👇</h2>
+      <div class="my-16 flex gap-10 max-md:flex-col">
+        <div class="flex items-center gap-5">
+          <i
+            class="ri-map-pin-fill text-2xl p-4 px-5 rounded-full text-blue-600 bg-white shadow_active"
+          ></i>
+          <div>
+            <h2 class="text-xl">Location</h2>
+            <p class="font-thin my-2 text-[#646464]">West Bengal, India</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-5">
+          <i
+            class="ri-mail-send-fill text-2xl p-4 px-5 rounded-full text-blue-600 bg-white shadow_active"
+          ></i>
+          <div>
+            <h2 class="text-xl">Mail</h2>
+            <p class="font-thin my-2 text-[#646464]">
+              <a href="mailto:itsmeebu@gmail.com">itsmeebu@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer  -->
+    <footer
+      class="text-white bg-black py-10 flex justify-between px-20 items-center max-md:px-6 max-md:flex-col gap-6"
+    >
+      <h2 class="text-l text-center">
+        Copyright © 2023. All rights are reserved
+      </h2>
+      <div>
+        <a href="https://www.linkedin.com/in/itsmeebu/" target="_blank"
+          ><i class="ri-linkedin-box-line text-3xl mr-5"></i
+        ></a>
+        <a href="https://github.com/itsme-ebu" target="_blank">
+          <i class="ri-github-line text-3xl"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

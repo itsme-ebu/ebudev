@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: itsmeebu;
+  src: url("./assets/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2");
+}
+@font-face {
+  font-family: boldfont;
+  src: url("./assets/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2");
+}
+@font-face {
+  font-family: medium;
+  src: url("./assets/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2");
+}
+@font-face {
+  font-family: para;
+  src: url("./assets/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2");
+}
+html {
+  scroll-behavior: smooth;
+}
+h1,
+.heading {
+  font-family: boldfont;
+}
+h2 {
+  font-family: itsmeebu;
+}
+
+li {
+  font-family: medium;
+}
+p {
+  font-family: para;
+}
+.shadow_active {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.skill_icon {
+  transition: all 0.5s ease-in-out;
+}
+
+.skill_icon:hover {
+  transform: translateY(-0.8rem);
+}
+
+.car {
+  background: url("./assets/car-rental-full.c58b37da333d73238fdd.webp");
+  background-position: top;
+  background-size: cover;
+  object-fit: cover;
+  transition: all 5s ease-in-out;
+  cursor: pointer;
+}
+
+.car:hover {
+  background-position: bottom;
+}
+
+.coindom {
+  background: url("./assets/coindom-full.c5fef9ca2f47e52897f8.png");
+  background-position: top;
+  background-size: cover;
+  object-fit: cover;
+  transition: all 5s ease-in-out;
+  cursor: pointer;
+}
+
+.coindom:hover {
+  background-position: bottom;
+}
+.gym {
+  background: url("./assets/gymate-home.52d00d03c15713c601c4.webp");
+  background-position: top;
+  background-size: cover;
+  object-fit: cover;
+  transition: all 5s ease-in-out;
+  cursor: pointer;
+}
+
+.gym:hover {
+  background-position: bottom;
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 70% 60% 40%/40% 60% 30% 70%;
+  }
+}
+.itsmee {
+  -webkit-animation: morph 8s ease-in-out infinite;
+  animation: morph 8s ease-in-out infinite;
+  background: url("./assets/3_11zon.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  transition: all 1s ease-in-out;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
